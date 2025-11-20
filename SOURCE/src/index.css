@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'krFont';
-    src: url(/RESOURCE/fonts/PretendardVariable.ttf) format("truetype");
+    src: url(../public/fonts/PretendardVariable.ttf) format("truetype");
 }
 
 @font-face {
     font-family: 'enFont';
-    src: url(/RESOURCE/fonts/Roboto-Medium.ttf) format("truetype");
+    src: url(../public/fonts/Roboto-Medium.ttf) format("truetype");
 }
 
 @font-face {
     font-family: 'numFont';
-    src: url(/RESOURCE/fonts/SUITE-Medium.ttf) format("truetype");
+    src: url(../public/fonts/SUITE-Medium.ttf) format("truetype");
 }
 
 .kr-font {

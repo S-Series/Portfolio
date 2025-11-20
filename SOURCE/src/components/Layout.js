@@ -6,14 +6,8 @@ function Layout({ children }) {
   return (
     <div className="layout">
       <NavBar />
-
-      <div className="layout-body">
-        <SideBar />
-        <main className="layout-content">
-          {children}
-        </main>
-      </div>
-
+      <SideBar />
+      <main className="layout-content">{children}</main>
       <Footer />
     </div>
   );

@@ -5,15 +5,23 @@
     width: 100%;
     height: 65px;
 
+    border-bottom: 2px #fff solid;
     box-shadow: #00000011 0px 14px 28px, #00000011 0px 10px 10px;
     background: linear-gradient(0deg,#b0d0d6,#7ca1be);
     z-index: 1001;
-    transition: all 0.3s linear;
+    transition: all 0.3s ease-out;
 }
 
 #navbar-body.scrolled {
-    box-shadow: #00000000 0px 0px 0px, #00000000 0px 0px 0px;
-    background: linear-gradient(0deg,#b0d0d600,#7ca1be00);
+    top: -65px;
+}
+
+#navbar-hover-hitbox {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    background: transparent;
 }
 
 #navbar-body .navbar-slot {
@@ -41,7 +49,7 @@
     display: flex;
     width: auto;
     height: 100%;
-    gap: 0.75rem;
+    gap: 0.5rem;
     padding: 0 0.75rem;
     border: 0;
 
@@ -59,14 +67,24 @@
 
 #navbar-body .navbar-item img {
     width: auto;
+    height: 40%;
+    border-radius: 50%;
+}
+
+#navbar-body .navbar-item img.title {
     height: calc(65% - 2px);
     border: 1px #888 solid;
-    border-radius: 50%;
 }
 
 #navbar-body .navbar-item span {
     display: inline-block;
     color: #000;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#navbar-body .navbar-item span.title {
     font-size: 1.5rem;
     font-weight: 600;
 }
+

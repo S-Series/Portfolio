@@ -1,0 +1,107 @@
+.home-data-body {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border-radius: 1.5rem;
+    gap: 2rem;
+}
+
+.home-data-body .liquid-glass {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-data-body.left {
+    align-self: flex-start;
+}
+
+.home-data-body.left .liquid-glass {
+    align-items: flex-start !important;
+}
+
+.home-data-body.right {
+    align-self: flex-end;
+}
+
+.home-data-body.right .liquid-glass {
+    align-items: flex-end !important;
+}
+
+/*====================================*/
+/* title box */
+/*====================================*/
+
+.home-title-box {
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    gap: 2rem;
+    margin: 1.5rem;
+}
+
+.home-data-body.left .home-title-box {
+    flex-direction: row;
+}
+
+.home-data-body.right .home-title-box {
+    flex-direction: row-reverse;
+}
+
+.home-title-box .home-main-logo {
+    height: calc(100% - 0.5rem);
+    margin: 0.25rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 30%;
+    filter: drop-shadow(0 0 10px rgba(80,150,255,0.7));
+    transition: 
+        height 0.25s ease,
+        margin 0.25s ease,
+        filter 0.25s ease;
+}
+
+.home-title-box .home-main-title {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.8rem;
+    word-break: keep-all;
+}
+
+/*====================================*/
+/* description box */
+/*====================================*/
+
+.home-description-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1.5rem;
+}
+.home-description-box .home-desc-item {
+    display: flex;
+    color: #fff;
+    gap: 0.5rem;
+}
+.home-description-box .home-desc-item .home-desc-icon{
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+.home-data-body.left .home-description-box {
+    align-items: flex-start;
+}
+
+.home-data-body.right .home-description-box {
+    align-items: flex-end;
+}
+
+/*====================================*/
+/* hover actions */
+/*====================================*/
+
+.home-data-body:hover .home-title-box .home-main-logo {
+    height: 100%;
+    margin: 0;
+    filter: drop-shadow(0 0 20px rgba(80,150,255,0.9));
+}

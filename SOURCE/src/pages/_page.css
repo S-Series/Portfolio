@@ -1,0 +1,18 @@
+#page-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    min-height: 200px;
+
+    gap: 2rem;
+    margin-bottom: 250px;
+    
+    align-items: center;
+}
+
+.glass-container {
+  width: 400px;     /* 반드시 명확한 픽셀 or % */
+  height: 200px;    /* liquid-glass가 사용할 정확한 높이 */
+  position: relative;
+}

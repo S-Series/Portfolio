@@ -1,0 +1,44 @@
+.layout {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    min-height: 110vh;
+}
+
+.layout-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+
+    box-sizing: border-box;
+    z-index: -1;
+}
+
+.layout-content-slot {
+    display: flex;
+    width: 70%;
+    max-width: 1200px;
+    height: fit-content;
+
+    margin-top: 125px;
+    align-self: center;
+    justify-self: center;
+
+}
+
+.space-background {
+    position: fixed;
+
+    inset: 0;
+    background: radial-gradient(circle at 50% 30%, #1b235a, #050510 80%);
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
+}
+
+#star-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}

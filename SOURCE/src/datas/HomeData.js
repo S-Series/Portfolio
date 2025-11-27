@@ -6,13 +6,14 @@ const HomeData = {
       title: "상상을 현실로, SSeries입니다.",
       logoPath: "./sseries.png",
       description: [
-        { logoPath: "./logo/dev.png", data: "Developer" },
-        { logoPath: "./logo/video.png", data: "Video Creator" },
-        { logoPath: "./logo/music.png", data: "Music Creator" },
-        { logoPath: "./logo/paint.png", data: "Artist" },
+        { logoPath: "./logo/dev.png", data: "Developer", urlPath: null },
+        { logoPath: "./logo/video.png", data: "Video Creator", urlPath: null },
+        { logoPath: "./logo/music.png", data: "Music Creator", urlPath: null },
+        { logoPath: "./logo/paint.png", data: "Artist", urlPath: null },
         {
           logoPath: null,
           data: "예술과 창작, 그리고 경험을 제공하는 콘텐츠를 만듭니다.",
+          urlPath: null,
         },
       ],
     },
@@ -26,14 +27,17 @@ const HomeData = {
         {
           logoPath: "./logo/works/wuwa.png",
           data: "띵조 DEV (React / OCR / CICD / Cloudflare)",
+          urlPath: "https://wuwa.dev/",
         },
         {
-          logoPath: "./logo/video.png",
+          logoPath: "./logo/works/remind.png",
           data: "Re:Mind 에디터 및 게임 (Unity / ASP.NET / Cloudflare)",
+          urlPath: "https://github.com/S-Series/ReMind-Editor-V2",
         },
         {
           logoPath: "./logo/music.png",
           data: "음악 제작 (EDM / Future Core / etc.)",
+          urlPath: null,
         },
       ],
     },

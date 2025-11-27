@@ -12,7 +12,8 @@ function HomeDataComp({ index }) {
   return (
     <div
       key={data.id}
-      className={`home-data-body ${index % 2 === 0 ? "left" : "right"}`}>
+      className={`home-data-body ${index % 2 === 0 ? "left" : "right"}`}
+    >
       <LiquidGlass
         className="liquid-glass"
         blur={0.5}
@@ -21,7 +22,8 @@ function HomeDataComp({ index }) {
         saturation={1.2}
         shadowIntensity={0.4}
         displacementScale={0.5}
-        elasticity={0.8}>
+        elasticity={0.8}
+      >
         <div className="home-title-box">
           {data.logoPath && (
             <img className="home-main-logo" src={data.logoPath} alt="logo" />
@@ -39,7 +41,13 @@ function HomeDataComp({ index }) {
                   src={item.logoPath}
                 />
               )}
-              <span className="home-desc-text">{item.data}</span>
+              {item.urlPath ? (
+                <a href={`${item.urlPath}`} className="home-desc-text link">
+                  {item.data}
+                </a>
+              ) : (
+                <div className="home-desc-text">{item.data}</div>
+              )}
             </div>
           ))}
         </div>

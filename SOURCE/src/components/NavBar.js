@@ -9,13 +9,12 @@ import "./NavBar.css";
 
 export default function NavBar() {
   const navigate = useNavigate();
-  const { isScrolled } = useProfile();
   const [isHovered, setIsHovered] = useState(false);
 
   const supLink = "https://ko-fi.com/sseries";
   const gitLink = "https://github.com/S-Series";
 
-  const { lang, setLang } = useProfile();
+  const { lang, setLang, isScrolled } = useProfile();
 
   return (
     <div
@@ -23,16 +22,16 @@ export default function NavBar() {
       className={`${isScrolled && !isHovered ? "scrolled" : ""}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}>
+      <div id="navbar-hover-hitbox" />
       <LiquidGlass
-        className="glass-container"
+        className="liquid-glass"
         borderRadius={0}
-        blur={0.25}
+        blur={1}
         contrast={1}
-        brightness={1.5}
+        brightness={1.1}
         saturation={1}
-        displacementScale={0.1}
-        elasticity={1}>
-        <div id="navbar-hover-hitbox" />
+        displacementScale={0.05}
+        elasticity={0.5}>
         <div className="navbar-slot left">
           {/* 타이틀 */}
           <button className="navbar-item" onClick={() => navigate("/")}>

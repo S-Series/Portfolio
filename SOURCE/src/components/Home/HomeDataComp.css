@@ -4,11 +4,12 @@
     width: 80%;
     border-radius: 1.5rem;
     gap: 2rem;
+    z-index: 0;
 }
 
 .home-data-body .liquid-glass {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
 }
 
 .home-data-body.left {
@@ -52,8 +53,8 @@
     margin: 0.25rem;
     aspect-ratio: 1 / 1;
     border-radius: 30%;
-    filter: drop-shadow(0 0 10px rgba(80,150,255,0.7));
-    transition: 
+    filter: drop-shadow(0 0 10px rgba(80, 150, 255, 0.7));
+    transition:
         height 0.25s ease,
         margin 0.25s ease,
         filter 0.25s ease;
@@ -78,16 +79,35 @@
     gap: 0.5rem;
     margin: 1.5rem;
 }
+
 .home-description-box .home-desc-item {
     display: flex;
     color: #fff;
     gap: 0.5rem;
+    height: 2rem;
+    align-items: center;
 }
-.home-description-box .home-desc-item .home-desc-icon{
-    height: 100%;
+
+.home-description-box .home-desc-item .home-desc-text {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.home-description-box .home-desc-item .home-desc-text.link {
+    text-decoration: underline;
+    transition: filter 0.2s ease;
+}
+.home-description-box .home-desc-item .home-desc-text.link:hover {
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1));
+}
+
+.home-description-box .home-desc-item .home-desc-icon {
+    height: 2rem;
     aspect-ratio: 1 / 1;
     overflow: hidden;
 }
+
 .home-data-body.left .home-description-box {
     align-items: flex-start;
 }
@@ -103,5 +123,5 @@
 .home-data-body:hover .home-title-box .home-main-logo {
     height: 100%;
     margin: 0;
-    filter: drop-shadow(0 0 20px rgba(80,150,255,0.9));
+    filter: drop-shadow(0 0 20px rgba(80, 150, 255, 0.9));
 }

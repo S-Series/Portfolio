@@ -13,6 +13,11 @@
     top: -65px;
 }
 
+#navbar-body .liquid-glass {
+    pointer-events: none;
+    filter:brightness(1.5);
+}
+
 #navbar-hover-hitbox {
     position: fixed;
     width: 100%;
@@ -67,6 +72,7 @@
     width: auto;
     height: 40%;
     border-radius: 50%;
+    filter: drop-shadow(0 0 10px #ffffffaa) brightness(0.75);
 }
 
 #navbar-body .navbar-item img.title {
@@ -76,7 +82,7 @@
 
 #navbar-body .navbar-item span {
     display: inline-block;
-    color: #000;
+    color: #fff;
     font-size: 1rem;
     font-weight: 500;
 }

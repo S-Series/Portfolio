@@ -1,8 +1,9 @@
 .layout {
+    display: flex;
     position: relative;
     width: 100%;
     height: fit-content;
-    min-height: 110vh;
+    min-height: 100vh;
 }
 
 .layout-content {
@@ -10,14 +11,14 @@
     flex-direction: column;
     width: 100%;
     height: fit-content;
+    min-height: 100vh;
 
     box-sizing: border-box;
-    z-index: -1;
 }
 
 .layout-content-slot {
     display: flex;
-    width: 70%;
+    width: 75%;
     max-width: 1200px;
     height: fit-content;
 
@@ -25,6 +26,7 @@
     align-self: center;
     justify-self: center;
 
+    z-index: 0;
 }
 
 .space-background {

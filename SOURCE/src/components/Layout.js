@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 
 import NavBar from "./NavBar";
-import SideBar from "./SideBar";
 import Footer from "./Footer";
 
 import "./Layout.css";
@@ -181,7 +180,9 @@ function Layout({ children }) {
         <canvas id="star-canvas"></canvas>
       </div>
       <NavBar />
-      <SideBar />
+      {
+        //<SideBar />
+      }
       <main className="layout-content">
         <div className="layout-content-slot">{children}</div>
       </main>

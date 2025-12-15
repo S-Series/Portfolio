@@ -1,0 +1,153 @@
+.project-container {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    height: fit-content;
+
+    gap: 1.5rem;
+    padding: 1rem;
+
+    border-radius: 1.5rem;
+    border: 1px solid #fff;
+}
+
+.project-container .header {
+    display: flex;
+    height: fit-content;
+
+    gap: 1rem;
+}
+
+.project-container .header .text-slot {
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+
+    gap: 0.5rem;
+    justify-content: space-between;
+}
+
+.project-container .header .text-slot .title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.project-container .header .text-slot .subtitle {
+    margin: 0;
+    font-size: 1rem;
+    word-break: keep-all;
+}
+
+.project-container .header .text-slot .period {
+    margin: 0;
+    color: #ffffff88;
+    font-size: 1rem;
+}
+
+.project-container .skill-slot {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.project-container .tech-slot {
+    font-size: 0.75rem;
+    padding: 0.25rem 1rem;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    background-color: #224;
+}
+
+.project-container img {
+    width: 40%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+
+    border: 1px solid #fff;
+    border-radius: 1rem;
+}
+
+.project-container .button-slot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    
+    gap: 2rem;
+}
+.project-container .link-button {
+    display: flex;
+    width: 8rem;
+    height: 2.5rem;
+
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem 1rem;
+    
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 1.3rem;
+    overflow: visible;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.project-container .link-button:hover {
+    background-color: #446;
+    transform: scale(1.1);
+}
+
+.project-container .link-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.25;
+}
+
+.project-container .link-button:disabled:hover {
+    background-color: transparent;
+    transform: scale(1);
+}
+
+.project-container .link-button img {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 0;
+    border-radius: 0;
+}
+
+.project-container .link-button span {
+    padding: 0 1rem;
+}
+
+/* ========================================= */
+@media (max-width: 700px) {
+    .project-container {
+        width: 400px;
+        height: fit-content;
+    }
+
+    .project-container .header {
+        height: fit-content;
+        height: 6rem;
+    }
+}
+
+@media (max-width: 456px) {
+    .project-container {
+        width: 280px;
+        height: fit-content;
+    }
+    .project-container .header {
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .project-container img {
+        width: 100%;
+    }
+
+    .project-container .button-slot {
+        gap: 1rem;
+    }
+}

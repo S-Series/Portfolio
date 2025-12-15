@@ -3,6 +3,10 @@ body {
     padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: 'krFont';
     src: url(../public/fonts/PretendardVariable.ttf) format("truetype");
